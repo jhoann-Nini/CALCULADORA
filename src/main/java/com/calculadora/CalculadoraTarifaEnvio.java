@@ -70,7 +70,7 @@ public class CalculadoraTarifaEnvio {
         boolean envioGratisCorporativo = tipoCliente == TipoCliente.CORPORATIVO
                 && montoCompraOriginal >= 1000;
 
-        if (envioGratisPorMonto || envioGratisCorporativo) {
+        if (envioGratisCorporativo || envioGratisPorMonto) {
             return 0;
         }
 
